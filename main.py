@@ -2,31 +2,6 @@ import cv2 as cv
 import numpy as np
 import time
 
-'''
-    THÀNH VIÊN NHÓM:
-    - Nguyễn Trọng Đại - 19146146
-    - Lê Phan Văn Việt - 19146302
-    - Trần Triệu Vĩ - 19146301
-    
-    ------------- Trình bày về bài tập -------------
-    -> Bài tập này chúng em sử dụng Cascade Filter để detect và phân loại xe 2 bánh và 4 bánh.
-    -> Nhóm sử dụng thuật toán CSRT để tracking xe.
-    
-    ------------- Về nhận xét -------------
-    -> Đối với bài tập này thì nhóm đã làm hết sức nhưng kết quả mang lại không được tốt lắm.
-    -> Nhóm đã detect và track được xe, nhưng với phần đếm xe thì không làm được tốt, theo nhóm nhận định là do bộ detect không được tốt,
-    nhóm em tính chuyển sang sử dụng mạng Vgg16 để detect nhưng thời gian không còn nhiều nên quyết định làm tiếp với Cascade.
-    -> Đối với phần code vẫn còn nhiều chỗ chưa được hợp lý, nhóm cố gắng khắc phục nhưng kết quả cũng không được như mong đợi.
-    
-    ------------- Lời kết -------------
-    -> Em thay mặt cả nhóm cảm ơn thầy về những bài giảng rất hay, thực tế.
-    -> Hy vọng gặp thầy kỳ sau với môn Hệ thống nhúng.
-    
-    Chúc thầy một ngày làm việc vui vẻ.
-    
-    Nguyễn Trọng Đại
-'''
-
 def centerRectangle(x,y,w,h):
     centerX = x + int(w/2)
     centerY = y + int(h/2)
